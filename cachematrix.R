@@ -1,7 +1,11 @@
-# We´d like to create a 'special matrix'. Actually the function returns a list of functions
+# With the makeCacheMatrix we want to create a 'special matrix'. Actually the function returns a list of functions
 # that lets us 'set' and 'get' a matrix and also 'set' and 'get' its inverse.
 # The cool thing about this is that we only have to compute the inverse of the matrix once and can cache it.
 # If we want to use it later on, we just have to call the according 'get'-function.
+
+# The cacheSolve-function allows us to cache the inverse of a 'special matrix'. If the inverse for the given 
+# 'special matrix' is not ye computed it uses the 'solve'-function to compute the inverse, caches and returns it.
+# Otherwise it prints "getting cached data" and returns the inverse.
 
 
 
